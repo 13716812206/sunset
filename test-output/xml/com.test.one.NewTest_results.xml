@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="D:/hexindai/sunset"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.064">
+  <properties />
+  
+  
+            <testcase name="one" time="0.063" classname="com.test.one.NewTest" />
+                <testcase name="two" time="0.001" classname="com.test.one.NewTest" />
+                <testcase name="three" time="0.000" classname="com.test.one.NewTest" />
+      
+</testsuite>

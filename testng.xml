@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/hexindai/sunset">
+        <groups>
+
+            <run>
+                    <include name="group1"></include>
+
+            </run>
+
+        </groups>
+        <classes>
+            <!--<class name="com.test.one.NewTest1">-->
+            <!--<methods>-->
+            <!--<include name="one"/>-->
+            <!--<include name="aa"/>-->
+            <!--</methods>-->
+            <!--</class>-->
+            <!--<class name="com.test.one.NewTest">-->
+            <!--<methods >-->
+            <!--<include name="three"/>-->
+            <!--<include name="one"/>-->
+            <!--<include name="two"/>-->
+            <!--</methods>-->
+            <!--</class>-->
+                    <class name="com.test.one.testNgTest">
+
+                    <!--<methods>-->
+
+                        <!--<include name="test"></include>-->
+                    <!--</methods>-->
+
+            </class>
+
+        </classes>
+
+
+    </test>
+</suite>
