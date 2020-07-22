@@ -1,36 +1,34 @@
 package com.test.one.utils;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class test{
 
     public static void main(String[] args) {
 
-        String aa = "welcome to shui&di";
-        String[] s = aa.split(" ");
-
-        int i = 0;
-        for (String str : s) {
-            i++;
-            if (s.length == i) {
-                System.out.println(str);
-                String[] bb = str.split("&");
-                for (String qq : bb) {
-                    System.out.print(qq);
-                }
-            }
-
-        }
-
-//        boolean aa;
-//        if (aa = true) {
-//            System.out.println("123123123");
+//        String aa = "welcome to shui&di";
+//        String[] s = aa.split(" ");
+//        System.out.println(s[0]);
+//        System.out.println(s[1]);
+//        System.out.println(s[2]);
+//        int i = 0;
+//        for (String str : s) {   i++;
+//            if (s.length == i) {
+//                System.out.println(str);
+//                String[] bb = str.split("&");
+//                for (String qq : bb) {
+//                    System.out.print(qq);
+//                }
+//            }
+//
 //        }
-
-
-//        test1();
-        quickSort();
+//
+//        test2();
+        test3();
+//        quickSort();
 
     }
-
     public static void test1() {
 
         int[] shuzi = new int[]{5, 6, 4, 2, 7, 9, 0};
@@ -68,10 +66,10 @@ public class test{
         int i=left;
         int j=right;
         while(i<j){
-            while(num1[j]<=key&&i<j){
+            while(num1[j]>=key&&i<j){
                 j--;
             }
-            while(num1[i]>=key&&i<j){
+            while(num1[i]<=key&&i<j){
                 i++;
             }
             if(i<j){
@@ -92,7 +90,40 @@ public class test{
 
     }
 
+    public static void test2() {
+
+    List list =new ArrayList<Integer>();
+        for(int i=1;i<=1000;i++) {
+            int aa=0;
+            for (int j=1;j<i;j++){
+                if(i%j==0){
+                        aa+=j;
+                    if(aa==i){
+                        list.add(aa);
+                    }
+                }
+
+            }
+        }
+        System.out.println(list.size()+"==================");
+        for(int c=0;c<list.size();c++){
+
+            System.out.println(list.get(c));
+        }
+    }
+
+    public static void test3(){
 
 
+        for(int i=100;i<=999;i++){
+            int b=i/100;
+            int c=i/10%10;
+            int d=i%10;
 
+
+            if(Math.pow(b,3)+Math.pow(c,3)+Math.pow(d,3)==i){
+                System.out.println(i+"================");
+            }
+        }
+    }
 }
